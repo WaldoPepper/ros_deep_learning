@@ -134,6 +134,8 @@ void img_callback( const sensor_msgs::ImageConstPtr input )
 
 			detMsg.bbox.center.theta = 0.0f;		// TODO optionally output object image
 
+            detMsg.source_img.header = input->header;
+
 			// create classification hypothesis
 			vision_msgs::ObjectHypothesisWithPose hyp;
 			
