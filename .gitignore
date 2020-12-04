@@ -1,1 +1,5 @@
 package.xml
+
+cmake-build-debug/
+
+.idea/
